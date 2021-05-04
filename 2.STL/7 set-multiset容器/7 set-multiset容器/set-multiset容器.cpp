@@ -2,6 +2,7 @@
 using namespace std;
 #include <set>
 
+
 class myCompare
 {
 public:
@@ -61,6 +62,14 @@ void test04()
 void test05()
 {
 	set<int, myCompare> st; //利用仿函数改变set排序规则
+}
+
+//pair对组
+void test06()
+{
+	//两种创建对组的方式
+	pair<int, string> p(30, "Tom");
+	pair<int, string> p2 = make_pair(30, "Tom");
 }
 
 
